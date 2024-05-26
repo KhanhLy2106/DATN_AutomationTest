@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AutoTestForWebsiteBookStore(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestSuite.OrderProductWithoutLogin">
+        <methods>
+          <include name="TC_09_16"/>
+          <include name="TC_09_13"/>
+          <include name="TC_09_24"/>
+          <include name="TC_09_14"/>
+          <include name="TC_09_25"/>
+          <include name="TC_09_17"/>
+          <include name="TC_09_28"/>
+          <include name="TC_09_29"/>
+          <include name="beforeClass"/>
+          <include name="setUpClass"/>
+          <include name="TC_09_11"/>
+          <include name="TC_09_22"/>
+          <include name="TC_09_12"/>
+          <include name="TC_09_23"/>
+          <include name="TC_09_10"/>
+          <include name="TC_09_21"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="setUpMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TestSuite.OrderProductWithoutLogin -->
+    </classes>
+  </test> <!-- AutoTestForWebsiteBookStore(failed) -->
+</suite> <!-- Failed suite [Suite] -->

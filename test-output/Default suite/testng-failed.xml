@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestSuite.OrderProductWithLogin">
+        <methods>
+          <include name="TC_09_46"/>
+          <include name="TC_09_49"/>
+          <include name="TC_09_48"/>
+          <include name="TC_09_47"/>
+          <include name="setUpClass"/>
+          <include name="TC_09_41"/>
+          <include name="TC_09_40"/>
+          <include name="beforeClass"/>
+          <include name="TC_09_42"/>
+          <include name="TC_09_45"/>
+          <include name="TC_09_44"/>
+          <include name="TC_09_54"/>
+          <include name="setUpMethod"/>
+          <include name="TC_09_57"/>
+          <include name="TC_09_38"/>
+          <include name="TC_09_59"/>
+          <include name="TC_09_39"/>
+          <include name="TC_09_58"/>
+          <include name="TC_09_52"/>
+          <include name="TC_09_51"/>
+          <include name="TC_09_53"/>
+          <include name="TC_09_56"/>
+          <include name="TC_09_55"/>
+          <include name="TC_09_50"/>
+          <include name="beforeSuite"/>
+          <include name="TC_09_43"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TestSuite.OrderProductWithLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

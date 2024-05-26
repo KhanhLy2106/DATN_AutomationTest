@@ -1,0 +1,1544 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/22</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 20 00:15:55 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (214 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.beforeClass()'><b>beforeClass</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace236567414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236567414'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpClass()'><b>setUpClass</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.setUpMethod()'><b>setUpMethod</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td></td>
+<td>-1692465355</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_38()'><b>TC_09_38</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1936502650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1936502650'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_39()'><b>TC_09_39</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace761750706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761750706'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_40()'><b>TC_09_40</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2033524545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2033524545'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_41()'><b>TC_09_41</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1344519051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344519051'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_42()'><b>TC_09_42</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1404932042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1404932042'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_43()'><b>TC_09_43</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1671590089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671590089'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_44()'><b>TC_09_44</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1632497828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1632497828'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_45()'><b>TC_09_45</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2103763750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103763750'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_46()'><b>TC_09_46</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace840514538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840514538'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_47()'><b>TC_09_47</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace247113419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247113419'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_48()'><b>TC_09_48</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1608633989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1608633989'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_49()'><b>TC_09_49</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1470868839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470868839'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_50()'><b>TC_09_50</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1481594086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481594086'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_51()'><b>TC_09_51</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace260084831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace260084831'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_52()'><b>TC_09_52</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1440738283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1440738283'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_53()'><b>TC_09_53</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1570470538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1570470538'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_54()'><b>TC_09_54</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1152606315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152606315'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_55()'><b>TC_09_55</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1506951181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506951181'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_56()'><b>TC_09_56</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace280615803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace280615803'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_57()'><b>TC_09_57</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace811207775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811207775'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_58()'><b>TC_09_58</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace589987187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace589987187'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+<tr>
+<td title='TestSuite.OrderProductWithLogin.TC_09_59()'><b>TC_09_59</b><br>Test class: TestSuite.OrderProductWithLogin</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace69673470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace69673470'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in /tmp/testng-eclipse--1095461452/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:323)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:411)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:734)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:118)
+	at org.testng.TestRunner.privateRun(TestRunner.java:724)
+	at org.testng.TestRunner.run(TestRunner.java:574)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1142)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1064)
+	at org.testng.TestNG.runSuites(TestNG.java:994)
+	at org.testng.TestNG.run(TestNG.java:962)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestSuite.OrderProductWithLogin@67b9b51a</td></tr>
+</table><p>
+</body>
+</html>

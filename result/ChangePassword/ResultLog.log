@@ -1,0 +1,5 @@
+2023-08-19 20:22:42 ERROR Utilities:74 - [TestID:TC_07_03][TestResult name=TC_07_03 status=FAILURE method=ChangePassword.TC_07_03()[pri:0, instance:TestSuite.ChangePassword@385c9627] output={null}]
+2023-08-19 20:24:27 ERROR Utilities:74 - [TestID:TC_07_06][TestResult name=TC_07_06 status=FAILURE method=ChangePassword.TC_07_06()[pri:0, instance:TestSuite.ChangePassword@385c9627] output={null}]
+2023-08-19 20:24:56 ERROR Utilities:74 - [TestID:TC_07_08][TestResult name=TC_07_08 status=FAILURE method=ChangePassword.TC_07_08()[pri:0, instance:TestSuite.ChangePassword@385c9627] output={null}]
+2023-08-19 20:26:46 ERROR Utilities:74 - [TestID:TC_07_14][TestResult name=TC_07_14 status=FAILURE method=ChangePassword.TC_07_14()[pri:0, instance:TestSuite.ChangePassword@385c9627] output={null}]
+2023-08-19 20:27:07 ERROR Utilities:74 - [TestID:TC_07_15][TestResult name=TC_07_15 status=FAILURE method=ChangePassword.TC_07_15()[pri:0, instance:TestSuite.ChangePassword@385c9627] output={null}]
